@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الحجز | مطعم كابوريا</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .reservation-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .reservation-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #0077b6;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    form button:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>مطعم كابوريا</h1>
+      <p>Kaboria Seafood Restaurant</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن المطعم</a></li>
+        <li><a href="menu.html">المنيو</a></li>
+        <li><a href="italian.html">الركن الإيطالي</a></li>
+        <li><a href="gallery.html">المعرض</a></li>
+        <li><a href="location.html">الموقع</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+        <li><a href="reservations.html" class="active">الحجز</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Reservation -->
+  <section class="reservation-container">
+    <h2>📌 احجز طاولتك</h2>
+    <form action="#" method="post">
+      <label>الاسم:</label>
+      <input type="text" name="name" placeholder="اكتب اسمك" required>
+
+      <label>رقم الهاتف:</label>
+      <input type="tel" name="phone" placeholder="010xxxxxxxx" required>
+
+      <label>البريد الإلكتروني:</label>
+      <input type="email" name="email" placeholder="example@email.com">
+
+      <label>عدد الأفراد:</label>
+      <select name="guests" required>
+        <option value="">اختر العدد</option>
+        <option value="1">1 فرد</option>
+        <option value="2">2 فرد</option>
+        <option value="3">3 أفراد</option>
+        <option value="4">4 أفراد</option>
+        <option value="5">5 أفراد</option>
+        <option value="6+">6 أو أكثر</option>
+      </select>
+
+      <label>التاريخ:</label>
+      <input type="date" name="date" required>
+
+      <label>الوقت:</label>
+      <input type="time" name="time" required>
+
+      <button type="submit">تأكيد الحجز</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>📍 الهضبة - مول الفرنسية - أمام مركز الشباب</p>
+    <p>📞 01002855282 | 01055346043 | 01287759772 | 01270066955</p>
+    <p>&copy; 2025 Kaboria Seafood Restaurant</p>
+  </footer>
+
+</body>
+</html>

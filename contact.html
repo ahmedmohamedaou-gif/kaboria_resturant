@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا | مطعم كابوريا</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .contact-info {
+      margin-bottom: 20px;
+      line-height: 2;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #0077b6;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    form button:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>مطعم كابوريا</h1>
+      <p>Kaboria Seafood Restaurant</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن المطعم</a></li>
+        <li><a href="menu.html">المنيو</a></li>
+        <li><a href="italian.html">الركن الإيطالي</a></li>
+        <li><a href="gallery.html">المعرض</a></li>
+        <li><a href="location.html">الموقع</a></li>
+        <li><a href="contact.html" class="active">اتصل بنا</a></li>
+        <li><a href="reservations.html">الحجز</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact -->
+  <section class="contact-container">
+    <h2 style="text-align:center;">📞 اتصل بنا</h2>
+
+    <div class="contact-info">
+      <p><b>📍 العنوان:</b> الهضبة - مول الفرنسية - أمام مركز الشباب</p>
+      <p><b>📞 الهواتف:</b> 01002855282 | 01055346043 | 01287759772 | 01270066955</p>
+      <p><b>⏰ المواعيد:</b> يومياً من 12 ظهراً حتى 12 منتصف الليل</p>
+    </div>
+
+    <form action="#" method="post">
+      <label>الاسم:</label>
+      <input type="text" name="name" placeholder="اكتب اسمك" required>
+
+      <label>البريد الإلكتروني:</label>
+      <input type="email" name="email" placeholder="example@email.com" required>
+
+      <label>الرسالة:</label>
+      <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>📍 الهضبة - مول الفرنسية - أمام مركز الشباب</p>
+    <p>📞 01002855282 | 01055346043 | 01287759772 | 01270066955</p>
+    <p>&copy; 2025 Kaboria Seafood Restaurant</p>
+  </footer>
+
+</body>
+</html>
